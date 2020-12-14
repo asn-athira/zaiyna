@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{font-family: 'Merriweather', serif; font-size: 20px; color:#000 !important; margin: 0; font-weight: 300; line-height: 36px;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{ line-height: normal !important;}
+* {  box-sizing: border-box;}
+p{ color: #72768b; line-height: 32px; font-weight: 300; font-size: 17px;}
+
+button:focus{ border: none;}
+body::-webkit-scrollbar {width:0px; /* width of the entire scrollbar */}
+
+.padding-0{ padding-left: 0 !important; padding-right: 0 !important;}
+.aos-all {  width: 1000px; max-width: 98%; margin: 10vh auto 0 auto;}
+.aos-item { }
+.aos-item__inner { position: relative; }
+label{ font-size: 15px;}
+
+
+
+/*.................................header area................................*/
+
+.logo{ max-width:90px}
+.contact-details{ color: #9397a6; font-weight: 300;}
+.contact-details span{ margin-left: 50px;}
+.menu-section{}
+
+
+/* ...............menu section............... */
+
+.menu-section nav {  padding: 0;}
+.menu-section nav ul {  float: right;}
+.menu-section nav ul li {  display: inline-block;  float: left;}
+.menu-section nav ul li:not(:first-child) {  margin-left:30px;}
+.menu-section nav ul li a { display: inline-block;outline: none;color:#000; font-size:16px; text-decoration: none; letter-spacing: 0.04em;}
+.menu-section nav ul li a:hover {  color: #808080;  text-decoration: none;}
+
+@media screen and (max-width:767px)
+ {  .nav-container {    position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: -1; background:rgba(0, 0, 0, 0.95); display: none; transition: all 0.2s ease;  }
+  .nav-container ul { position: absolute; width: 100%; margin: 50px 0 0 0; padding-right:20px; }
+  .nav-container ul li { display: block; float: none; width: 100%; text-align: right;margin-bottom: 10px;  }
+  .menu-section nav ul li:not(:first-child) {  margin-left:0px;}
+  .nav-container ul li:nth-child(1) a {  transition-delay: 0.2s;  }
+  .nav-container ul li:nth-child(2) a {    transition-delay: 0.3s;  }
+  .nav-container ul li:nth-child(3) a {    transition-delay: 0.4s;  }
+  .nav-container ul li:nth-child(4) a {    transition-delay: 0.5s;  }
+  .nav-container ul li:nth-child(5) a {    transition-delay: 0.6s;  }
+  .nav-container ul li:nth-child(6) a {    transition-delay: 0.7s;  }
+  .nav-container ul li:first-child { margin-left:0px;   }
+  .menu-section nav ul li a{ color: #fff;}
+  .nav-container ul li a {    padding: 10px 0px; opacity: 0; color: #fff; font-size: 24px; font-weight: 600; transform: translateY(-20px); transition: all 0.2s ease; }
+  .nav-open {    position: fixed;  right: 10px; top: 10px; display: block; width: 48px; height: 48px; cursor: pointer; z-index: 9999;border-radius: 50%;}
+  .nav-open i { display: block; width: 20px; height: 2px; background: #000; border-radius: 2px; margin-left: 14px;}
+  .nav-open i:nth-child(1) { margin-top: 16px; }
+  .nav-open i:nth-child(2) { margin-top: 4px; opacity: 1; }
+  .nav-open i:nth-child(3) { margin-top: 4px; }}
+#nav:checked + .nav-open {  transform: rotate(45deg);
+}
+#nav:checked + .nav-open i { background: #fff;transition: transform 0.2s ease;}
+#nav:checked + .nav-open i:nth-child(1) {transform: translateY(6px) rotate(180deg);}
+#nav:checked + .nav-open i:nth-child(2) { opacity: 0;}
+#nav:checked + .nav-open i:nth-child(3) { transform: translateY(-6px) rotate(90deg);}
+#nav:checked ~ .nav-container {  z-index: 9990;  display: block;}
+#nav:checked ~ .nav-container ul li a { opacity: 1;transform: translateY(0px);}
+.hidden {  display: none;}
+
+/* ........................banner area............... */
+
+.banner-section{ width: 100%; height: auto; float: left; margin: 0;}
+.hero-content{  position: relative;  max-width: 770px; margin-top:23px; padding-right:138px; font-size: 50px; font-weight: 900;
+color: #000; line-height: 75px;}
+.hero-content span{ color: #0254bd;}
+.banner-image img{ float: right; border-radius: 30px;}
+.banner-image{ width: 100%; height: auto; float: left; margin: 43px 0 0 0;}
+.nav-pills{ border: 1px solid #e7e7e7;}
+.nav-pills .nav-item a{ padding:15px 21px; color: #000;}
+.nav-pills .nav-link.active{background-color: #1b65c3 !important;}
+.tab-content{border: 1px solid #e7e7e7; padding: 15px; width: 100%; float: left;}
+.tab-content input{ font-size: 15px; background: #f9f9f9; border: 1px solid #dddddd;}
+.tab-content .form-control{ padding: 13px; height: auto;}
+.tab-content .icon{ position:absolute; top:75px; right:15px; font-size:16px}
+.tab-content .btn{ background: #1b65c3; color: #fff; padding: 10px 18px;}
+
+/* ...............date picker..... */
+
+.ui-datepicker{ top: 526px !important;}
+.calendar {background: #ffffff; border-radius: 4px; background: #f9f9f9; border: 1px solid #dddddd; margin-bottom:0px; font-size: 15px;
+ height: 50px; padding: 12px; width: 100%;}
+.ui-datepicker { background: #ffffff; border-radius: 15px;}
+.ui-datepicker-header { height: 50px; line-height: 50px; color: #ffffff; background: #31639c; margin-bottom: 10px;}
+.ui-datepicker-prev,.ui-datepicker-next { width: 20px; height: 20px; text-indent: 9999px; border-radius: 100%; cursor: pointer; overflow: hidden; margin-top: 12px;}
+.ui-datepicker-prev { float: left; margin-left: 12px;}
+.ui-datepicker-prev:after { transform: rotate(45deg); margin: -43px 0px 0px 8px;}
+.ui-datepicker-next { float: right; margin-right: 12px;}
+.ui-datepicker-next:after { transform: rotate(-135deg); margin: -43px 0px 0px 6px;}
+.ui-datepicker-prev:after,.ui-datepicker-next:after {  content: ''; position: absolute; display: block; width: 8px; height: 8px; border-left: 2px solid #ffffff; border-bottom: 2px solid #ffffff;}
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover, .ui-datepicker-prev:hover:after, .ui-datepicker-next:hover:after { border-color: #333333;S}
+.ui-datepicker-title { text-align: center; font-size:20px;}
+.ui-datepicker-calendar { width: 100%; text-align: center;}
+.ui-datepicker-calendar thead tr th span { display: block; width: 40px; color: #31639c; margin-bottom: 5px;font-size: 15px;}
+.ui-state-default { display: block; text-decoration: none; color: #333333; line-height: 40px; font-size: 13px;}
+.ui-state-default:hover { color: #ffffff; background:#31639c; border-radius:50px; transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);}
+.ui-state-highlight { color: #ffffff; background-color:#31639c; border-radius:50px;}
+.ui-state-active {  color: #ffffff; background-color:#31639c; border-radius:50px;}
+.ui-datepicker-unselectable .ui-state-default { color: #eee; border: 2px solid transparent;}
+.icon {margin-left: -30px; margin-top: -26px; position: relative; color: #31639c; font-size:20px;}
+
+.pricing_filter{ width: 100%; height: auto; float: left; margin: 0;}
+.itemname{ font-size: 15px;} 
+.texttarea{ padding:10px !important; border: none !important; font-size: 15px !important; color: #000 !important;}
+.texttarea option{ font-size: 15px !important; color: #000 !important;}
+.amount{ width: auto; height: auto; float: left;}
+.amount h5{ font-size: 15px; text-transform: uppercase; font-weight: 600; float: left; margin-top: 3px;}
+.amount span{ font-size:24px; margin-left:6px; color: #1b65c3; line-height: normal; position: relative; bottom:5px; text-align: right;}
+.pricing_filter .form-check{ margin-top: 5px;}
+.pricing_filter .form-control{ padding: 8px 15px;}
+
+
+/* ........................price tab count style......... */
+
+.qty .countt {
+  color: #000;
+  display: inline-block;
+  vertical-align: top;
+  font-size:19px;
+  font-weight:400;
+  line-height:21px;
+  padding: 0 2px;
+  min-width: 35px;
+  text-align: center; border: none;
+}
+.qty .plus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color:#fff;
+  width:auto;
+  height:auto;
+  text-align: center;
+  border-radius: 50%; position: relative; bottom:0px; font-size:15px; background: #1b65c3; height: 20px; width: 20px; }
+.qty .minus {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  width:auto;
+  height:auto;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box; position: relative; bottom:0px; font-size: 15px; background: #1b65c3; height: 20px; width: 20px;
+}
+
+.minus:hover{
+  background-color: #717fe0 !important;
+}
+.plus:hover{
+  background-color: #717fe0 !important;
+}
+/*Prevent text selection*/
+.qty span{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.qty input{  
+  border: 0;
+  width: 2%;
+}
+.qty input::-webkit-outer-spin-button,
+.qty input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.qty input:disabled{
+  background-color:white;
+}
+       
+
+
+/* ...................pricing plan............. */
+
+.pricing-section, .feature-section, .how_we-section, .download-section, .footer-section, .copy-rights{ width: 100%; height: auto; float: left; margin: 80px 0 0 0;}
+.pricing-section span, .feature-section span, .how_we-section span{ color: #72768b; font-size: 21px; font-weight: 300; margin-bottom: 20px; display: block;}
+.pricing-section h2, .feature-section h2, .how_we-section h2{ font-size: 30px; font-weight: 400; margin:15px 0 40px;}
+.icon-otr { background: #0254bd; border-radius: 50%; width:65px; height:65px; padding: 15px; text-align: center; display: inline-block;}
+.icon-otr img{ width: 35px;}
+.pricing-section h3{ font-size: 25px; margin: 20px 0;}
+.price{ color: #0254bd; font-size: 22px; text-transform: uppercase;}
+.pricing-section p{ color: #72768b; line-height: 32px; font-weight: 300; font-size: 17px; margin-bottom:30px;}
+.pricing-section a{ background: #0254bd; color: #fff; padding: 18px 30px; border-radius: 5px;}
+.pricing-section a:hover{ color: #fff; text-decoration: none;}
+.plan-list{ width: 100%; height: auto; float: left; margin: 30px 0 60px;}
+
+/* ..........................feature section......................... */
+
+.feature-content{ margin:35px 0; padding: 0 0 0 70px; float: left;}
+.feature-content li h3{ font-size: 26px;}
+.feature-content li p{ color: #72768b; font-weight: 300;}
+.feature-content li{ line-height: 38px; margin-bottom: 25px; list-style: none; background:url(../img/bullet.jpg) top left no-repeat; padding-left: 28px;}
+
+div.flip-3d {  perspective: 1200px;  display: inline-block;}
+div.flip-3d figure {  position: relative;  transform-style: preserve-3d;  transition: 1s transform;  font-size: 1.6rem;}
+div.flip-3d figure img {  width: 100%;  height: auto; border-radius: 20px;}
+div.flip-3d figure figcaption {  position: absolute;  width: 100%;  height: 100%;  top: 0;  transform: rotateY(.5turn) translateZ(1px);
+  background: rgba(255, 255, 255, 0.9);  text-align: center;  padding-top: 45%;  opacity: 0.6;  transition: 1s .5s opacity;}
+div.flip-3d:hover figure {  transform: rotateY(.5turn); margin-bottom: 0rem !important;} 
+div.flip-3d:hover figure figcaption {  opacity: 1;}
+div.flip-3d figure:after {  content: " ";  display: block;  height:0.5vw;  width: 100%;  transform: rotateX(90deg);
+  background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);}
+
+@media screen and (max-width: 800px) {
+  div#flip-3d {    perspective-origin: center top;  }
+  div#flip-3d figure {    display: block;    width: 50%;    margin: 0 auto;    margin-bottom: 12vw;  }
+  div#flip-3d figure:last-child {    display: none;  }
+}
+
+
+
+/* ............................how we works..................... */
+
+.how-works{ position: relative; text-align: center;}
+.how-works img{ width:50px; margin-top:80px;}
+.how-works h4{ font-size: 20px; font-weight: 700; margin: 25px 0; min-height: 48px;}
+.how-works p{color: #72768b; font-weight: 300; padding: 0 20px;}
+.how_we-section h2{ margin-bottom: 80px;}
+.count{ position: absolute; right: 0; top: 0; background: #3576ca; width: 60px; height: 55px; border-radius:0 0 0 100px;}
+.count span{  color: #fff; padding: 5px; margin-left: 5px;}
+
+
+/* ............................Download area..................... */
+
+.download-section h2{  font-size:55px; font-weight: 900; line-height:76px; margin: 30px 0;} 
+.download-section a img{ width: 150px; margin-right: 10px;}
+.logo-down{ margin-top: 80px;}
+
+/* ............................Footer section..................... */
+
+.footer-section{ background: #ebebeb; padding: 80px 0;}
+.footer-section p{color: #72768b; font-size: 15px; line-height: 30px; font-weight: 300; }
+.footer-section h4{ font-size: 24px; font-weight: 700; margin: 20px 0;}
+.footer-section ul li{ list-style: none; line-height: 30px; }
+.footer-section ul li a{color: #72768b; font-size: 15px; font-weight: 300;}
+
+.copy-rights p{color: #72768b; font-size: 16px; line-height: 32px; font-weight: 300; }
+.social-icon li{ list-style: none; width: 45px; height: 45px; padding-top: 5px; border-radius: 50%; border:1px solid #ccc; float: left; margin-left: 8px;}
+.social-icon li a{ color: #696969; font-size:25px; padding: 11px; }
+.copy-rights{ margin:50px 0 !important;}
+
+.contact-ftr{ width: 100%; height: auto; float: left; margin: 0; padding: 40px; z-index: 1; position: fixed; bottom: 0;  background: #f7f7f7; display: none;}
+.con-links ul li{ list-style: none; margin-bottom: 15px;}
+.con-links ul { padding-left: 0; margin-top: 20px;}
+.con-links ul li img{ width:25px;}
+.con-links ul li a {color: #72768b; margin-left: 20px; font-size: 15px;}
+.close-btn{ position: absolute; top:10px; right:10px; border: none; font-size: 26px; color: #0254bd; background: none;}
+.float-btn{ position: fixed; bottom: 13%; right:0; display: none; width: 100px; height: 100px;}
+.floticon{ width: 50px;}
+.ftr-logo{ width: 96px;}
+
+.float-btn .play-btn { width: 55px; height:55px; text-align: center;border-radius: 0%; position: absolute; top: 0; left: 0; right: 0; text-align: center; background: #007bff; margin: 40% auto;}
+.float-btn .play-btn i{ position: relative; top:17px; left: 1px; color: #fff;} 
+.float-btn .blob {  box-shadow: 0 0 0 0 rgb(40, 127, 249); animation: pulse-blue 2s infinite;}
+
+@keyframes pulse-blue {
+    0% { box-shadow: 0 0 0 0 rgba(40, 127, 249, 0.7); }
+    70% { box-shadow: 0 0 0 30px rgba(40, 127, 249, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(40, 127, 249, 0); }
+}
+
+@keyframes pulse-blue-small {
+    0% { box-shadow: 0 0 0 0 rgba(40, 127, 249, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(40, 127, 249, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(40, 127, 249, 0); }
+}
+
+
+
+/* .........................time-schedule.......................... */
+
+.time-slot{ width: 100%; height: auto; float: left;}
+.btn-time{position: relative; display: inline-block; min-width: 136px; text-align: center;}
+.btn-time{ border:1px solid #1b65c3; color: #1b65c3; padding: 9px; display: inline-block; margin-left: 15px; font-size: 15px; margin-right: 0; border-radius: 5px;}
+.btn-time:hover, .select-btn:hover{ text-decoration: none;}
+.ellipsiss{ display: inline-block; color: #9c9c9c; margin-left: 15px;}
+.select-btn{ display: inline-block; min-width: 136px; text-align: center; padding: 9px; margin-left: 15px; font-size: 15px; margin-right: 0; background: #1b65c3; color: #fff; border-radius: 5px} 
+.select-btn:hover{ color: #fff;}
+
+
+
+/* .........................media query............ */
+
+@media screen and (min-width:1440px){
+.banner-image img{ max-width: 550px;}
+}
+
+@media screen and (max-width:768px){
+.contact-details{ display: none;}  
+.hero-content{ padding-right: 0; font-size: 32px;}
+.nav-pills .nav-item a{ font-size: 13px;}
+.pricing_filter .form-control{ padding-left: 0;}
+.pricing-section h2, .feature-section h2{ font-size: 23px; margin-bottom: 0;}
+.feature-section h2{ margin-bottom: 30px;}
+.pricing-section h3{ font-size: 18px; margin-bottom: 12px;}
+.price{ font-size: 16px;}
+.icon-otr{ width: 55px; height: 55px;}
+.icon-otr img{ width: 26px;}
+.pricing-section a{ padding: 10px 15px; display: inline-block; margin-bottom:40px; font-size: 14px;}
+.pricing-section p{ margin:20px auto; width: 75%; }
+.pricing-section, .feature-section, .how_we-section, .download-section, .footer-section, .copy-rights{ margin: 0;}
+.feature-content{ padding: 0;}
+.feature-content li h3{ font-size: 22px;}
+.download-section h2{ font-size: 36px;}
+.about-content h2{ font-size: 35px !important; margin-top: 50px !important;}
+.img-conainer h3{ text-align: left !important;}
+.offer-tag { padding: 50px 0;}
+.offer-tag p, .service-content p, .services-list p{ width: 100% !important;}
+.connect-us{ margin-top: 40px !important;}
+.connect-us span{ width: 40px !important; height: 40px !important; padding: 8px !important; text-align: center;}
+.connect-us span i{ font-size: 15px !important;}
+.pricing-section{ margin-top: 50px;}
+.pricing-section h2{ margin-bottom:50px !important;}
+.slideanim.slide{ visibility: visible !important;}
+.nav-pills .nav-item a, .tab-content .btn{ padding: 10px 15px;}
+.tab-content .btn{ font-size: 14px;}
+div.flip-3d figure{ height: 240px; border-radius: 20px !important; overflow: hidden;}
+div.flip-3d figure img{ border-radius: none !important;}
+.plan-list{margin: 30px 0 20px;}
+.how-works h4{ min-height: auto; margin: 25px 0 10px;}
+.count{ left: 0; right: 0; margin: 0 auto; border-radius:0 !important ;}
+.count span{ margin-left: 0; padding: 11px;}
+.how-works p{ margin-bottom: 50px;}
+.container-fluid{ width: 100% !important;}
+.contact-ftr{}
+.contact-ftr h3{ font-weight: 600; line-height: 42px !important; font-size: 20px;}
+.contact-ftr h3 span{color: #0254bd; font-size: 30px;}
+.contact-ftr .contact-details{ display: block;} 
+.contact-ftr .contact-details span{ margin-left: 0; color: #333; font-weight: 400; line-height: 32px;}
+.float-btn{ display: block;}
+.btn-time{ width: 100%;  margin: 10px 0 10px;}
+.ellipsiss{    margin: 0 auto; text-align: center; width: 100%; transform: rotate(90deg);}
+}

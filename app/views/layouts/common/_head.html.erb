@@ -1,0 +1,26 @@
+<%
+  unless @page_heading
+    @page_heading = "Zaiyna | Zaiyna laundry & home services"
+  end
+
+  unless @meta_description
+    @meta_description = ""
+  end
+  unless @meta_keywords
+    @meta_keywords = ""
+  end
+%>
+<head>
+
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title><%= @page_heading %></title>
+	<meta content="<%= @meta_description %>" name="descriptison">
+	<meta content="<%= @meta_keywords %>" name="keywords">
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">	
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+</head>

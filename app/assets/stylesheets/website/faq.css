@@ -1,0 +1,10 @@
+
+
+.faq-page{ width: 100%; height: auto; float: left; margin: 60px 0 0;}
+.faqhead-content{ width: 100%; height: auto; text-align: center; margin: 0;}
+.faqhead-content h2{ font-weight: 700; color: #1b65c3;}
+.faq-page .accordion{ margin: 50px 0;}
+
+.faq-page .card-header{ border: none !important; background: #1b65c3; padding: 1.25rem 1.25rem;}
+.faq-page .card-header button{color: #fff;}
+.faq-page .card-body{ line-height: 34px; font-size: 15px;}

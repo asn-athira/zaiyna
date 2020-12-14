@@ -1,0 +1,15 @@
+
+
+.pricing-header{  width: 100%; height:150px; float: left; position: relative; overflow: hidden; text-align: center; padding:0; z-index: 1; background-attachment:scroll; background-position:center; background-repeat:no-repeat; }
+.bg-overlay{ width: 100%; height: 100%; background: rgba(0, 43, 167, .75); padding:2% 0;}
+.pricing-header h2{ color: #fff; font-size:38px;}
+.pricing-header h3{ text-transform: uppercase; font-weight: 300; color: #7accff;}
+.pricing-page{ width: 100%; height: auto; float: left; margin: 60px 0 0;}
+.pricing-page .table th, .pricing-page .table td{ padding:20px 25px;}
+.pricing-page .table tr{ text-align: center;}
+.pricing-page .table-responsive{ margin-bottom: 50px;}
+
+
+@media screen and (max-width:768px){
+    .pricing-header h2{ font-size: 28px;}    
+}

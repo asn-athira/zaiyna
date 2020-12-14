@@ -1,0 +1,11 @@
+
+
+.contact-page{ width: 100%; height: auto; float: left; margin: 60px 0 0;}
+.contact-page p{font-size: 24px; line-height: 40px; font-weight: 300; color: #000;}
+.contact-page h2{ font-weight: 700; color: #1b65c3;}
+.contact-page .form-control{ padding: 15px; height: auto; margin-bottom: 15px;}
+.contact-page .btn{ background: #1b65c3;  border-radius: 5px; color: #fff; padding: 15px 25px; display: inline-block; margin-top: 20px; width: 100%; text-transform: uppercase;}
+.connect-us{ width: 100%; height: auto; float: left; margin:0;}
+.connect-us span{ width: 60px; height: 60px; float: left; border-radius: 50%; background: #1b65c3; padding:20px; margin-right: 20px;}
+.connect-us span i{ color: #fff; font-size: 20px;}
+.connect-us p{ font-size: 17px; color: #9397a6; display: flex;}

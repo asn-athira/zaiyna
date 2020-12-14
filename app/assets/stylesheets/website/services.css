@@ -1,0 +1,7 @@
+
+.service-content{ width: 100%; height: auto; float: left; margin:80px 0 30px; text-align: center;}
+.service-content p, .services-list p{width: 75%; height: auto; margin: 0 auto; line-height: 36px; color: #72768b;}
+
+.services-list{ width: 100%; height: auto; float: left; margin: 0; padding: 60px 0; background: #ebebeb;}
+.services-list p{ width: 90%; font-size: 15px; line-height: 32px; min-height: 175px;}
+.services-list .icon-otr{ margin-bottom: 20px;}

@@ -1,0 +1,55 @@
+
+.booking-section{ width: 100%; height: auto; float: left; margin: 0; padding: 50px 0 20px; }
+.pagination-top{ position: relative; width: auto; height: auto;}
+.pagination-count { background: #e2e2e2; color: #fff; border-radius: 50%; width: 25px; height: 25px; text-align: center; display: inline-block;}
+.C_active{ background: #1b65c3;}
+.pagination-head{ display: inline-block; font-size: 20px; margin-left: 20px;}
+
+.section-left, .section-right{ padding: 20px; border: 1px solid #e7e7e7; width: 100%; float: left;}
+.section-left h4, .section-right h4{ font-size: 16px; font-weight: bold;}
+.section-left label{ font-size: 14px;}
+.section-left .form-control{ height: auto; padding: 10px;}
+.section-left a{ font-size: 14px;}
+.booking-summary{ width: 100%; float: left; margin-bottom: 15px;}
+.booking-summary span i{ font-size: 10px; position: relative; bottom: 4px; color: #8c939c; }
+.booking-summary span { width: 20px; height: 20px; border-radius: 50%; border: 1px solid #8c939c; float: left; padding: 0 4px; margin-top: 3px;}
+.summary-heading{ display: inline; color: #8c939c; font-size: 15px; margin-left: 10px; text-transform: uppercase; }
+.booking-summary p{ font-size: 14px; display: inline; margin-left: 15px;}
+/* .summary-heading::after{ content: ':';} */
+
+.S-active span{ border: none; background: #13ce66;  margin-top: 5px; padding: 0 5px;}
+.S-active span i{color: #fff; bottom: 3px;}
+.S-active .summary-heading, .S-active p{ color: #000;}
+.collection-section .form-control{ font-size: 15px; height: auto; padding:14px 10px; color: #5e5e5e;}
+.collection-section .pickup{ width: 80px;}
+.collection-section h4{ display: inline; margin-left: 15px; color: #1b65c3;}
+
+.btn-next{ background: #13ce66; padding: 15px 20px; color: #fff; text-align: center; border: none; width: 100%;} 
+.service-booking{ margin:15px 0;}
+.Service h3{ font-size:18px; margin: 10px 0;}
+.add-btn{ border: 1px solid #1b65c3; padding:8px 20px; border-radius: 5px; font-size: 14px; background: #fff;}
+.add-btn:hover, .B-active { background: #1b65c3; color: #fff; }
+.Service .icon-otr img{ width: 25px;}
+.Service .icon-otr{ width: 55px; height: 55px;}
+.Service{ float: left; margin: 20px 0;}
+.gift-card .add-btn{ float: right; display: inline;}
+.gift-card p{ display: inline;}
+.gift-card {margin: 30px 0 15px; padding-top: 15px; border-top: 1px solid #e7e7e7;}
+.privacy-policy p { font-size: 14px; color: #000; margin-top: 15px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .section-right{ display: none;}
+
+}

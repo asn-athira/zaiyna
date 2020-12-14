@@ -1,0 +1,34 @@
+.landing-header{  width: 100%; height:450px; float: left; position: relative; overflow: hidden; text-align: left; padding:0; z-index: 1; background-attachment:scroll; background-position:center; background-repeat:no-repeat; background-image: url("../img/sofa-cleaning.jpg");}
+.bg-overlay{ width: 100%; height: 100%; background: rgba(0, 43, 167, .65); padding:11% 0;}
+.landing-header h2{ color: #fff; font-size:45px;}
+.landing-header h3{ text-transform: uppercase; font-weight: 300; color: #7accff;}
+.landing-page{ width: 100%; height: auto; float: left; margin: 60px 0 0;}
+.landing-page .table th, .pricing-page .table td{ padding:20px 25px;}
+.landing-page .table tr{ text-align: center;}
+.landing-page .table-responsive{ margin-bottom: 50px;}
+
+.call-btn{ padding:9px 20px; border: 2px solid #fff; color: #fff; border-radius: 5px; margin:15px 15px 0 0; float: left;}
+.call-btn:hover{ background: #fff; color: #000; text-decoration: none;}
+
+.bg-grayy{ background: #0254bd; }
+.bg-grayy p{ color: #fff; font-size: 24px; line-height: 40px; font-weight: 500;}
+
+.landing-page b{ color: #000; font-size: 22px;}
+
+.contact-badge{ width: 100%; height: auto; float: left; margin:30px 0; padding: 30px 0; background: #0254bd; color: #fff;}
+.contact-badge p{ color: #fff;}
+.contact-badge .call-btn{ display: inline;}
+.quick-orderr{ width: 100%; height: auto; float: left;}
+.quick-orderr .form-control{ height: auto; padding: 10px !important;}
+
+.submit-btn{ margin: 40px 0; float: right; background: #0254bd; color: #fff; padding: 10px 25px; border: none; border-radius: 5px; margin-right: 15px;}
+
+
+
+
+
+@media screen and (max-width:768px){
+    .landing-header h2{ color: #fff; font-size:35px;}
+    .landing-header{ height: 300px;}
+    .bg-grayy p{ font-size: 18px;}
+}

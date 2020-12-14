@@ -1,0 +1,40 @@
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+<script>
+   jQuery(document).ready(function () {
+  jQuery('#datepicker').datepicker({
+  format: 'dd-mm-yyyy',
+  startDate: '+1d'
+  });
+  });  
+
+  $('.countt').prop('disabled', true);
+     			$(document).on('click','.plus',function(){
+  				$('.countt').val(parseInt($('.countt').val()) + 1 );
+      		});
+          	$(document).on('click','.minus',function(){
+      			$('.countt').val(parseInt($('.countt').val()) - 1 );
+      				if ($('.countt').val() == 0) {
+  						$('.countt').val(1);
+  					}
+      	    	});
+
+
+  // $(".close-btn").click(function(){
+  //   $(".contact-ftr").hide();
+  // });
+
+  // $(".floticon").click(function(){
+  //   $(".contact-ftr").show();
+
+    $(".close-btn").click(function(){
+    $(".contact-ftr").css('display','none');
+  });
+
+  $(".floticon").click(function(){
+    $(".contact-ftr").css('display','block');
+
+    
+  });
+
+</script>

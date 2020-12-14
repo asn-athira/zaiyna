@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <!-- head partial-->
+  <%= render :partial=>"/layouts/common/head" %>
+
+  <body>
+  <div class="container-fluid">
+
+    <!-- header partial-->
+    <%= render :partial=>"/layouts/common/header" %>
+    <div class="container">
+
+      <%= yield %>
+
+    </div>
+
+  </div>
+
+    <!-- Footer -->
+    <%= render :partial=>"/layouts/common/footer" %>
+
+    <!-- Load Javascripts -->
+    <%= render :partial=>"/layouts/common/javascripts" %>
+
+    
+  </body>
+</html>
