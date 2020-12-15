@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get '/services',      to: "services#index",     as: :services
     get '/faq',           to: "faq#index",          as: :faq
     get '/contact',       to: "contact#index",      as: :contact
+    get '/booking',       to: "booking#index",      as: :booking
   
   end
 

@@ -195,7 +195,7 @@ color: #000; line-height: 75px;}
 .feature-content{ margin:35px 0; padding: 0 0 0 70px; float: left;}
 .feature-content li h3{ font-size: 26px;}
 .feature-content li p{ color: #72768b; font-weight: 300;}
-.feature-content li{ line-height: 38px; margin-bottom: 25px; list-style: none; background:url(../img/bullet.jpg) top left no-repeat; padding-left: 28px;}
+.feature-content li{ line-height: 38px; margin-bottom: 25px; list-style: none; background:url(<%= image_path('bullet.jpg')%>) top left no-repeat; padding-left: 28px;}
 
 div.flip-3d {  perspective: 1200px;  display: inline-block;}
 div.flip-3d figure {  position: relative;  transform-style: preserve-3d;  transition: 1s transform;  font-size: 1.6rem;}
